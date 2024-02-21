@@ -9,6 +9,7 @@ import {
   } from "@/components/ui/sheet"
 import Image from 'next/image'
 import { Separator } from "@/components/ui/separator"
+import NavItems from './NavItems'
 
   
 
@@ -25,7 +26,7 @@ const MobileNav = () => {
       className='cursor-pointer'
       />
     </SheetTrigger>
-    <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
+    <SheetContent className="flex flex-col gap-6 bg-white">
       <Image
       src="/assets/images/logo.svg"
       alt ="logo"
@@ -33,6 +34,8 @@ const MobileNav = () => {
       height={38}
       />
       <Separator className="boder boder-gray-50" />
+      <NavItems/>
+     
 
     </SheetContent>
   </Sheet>
