@@ -1,6 +1,7 @@
-import { headerLinks } from '@/constants'
+import { headerLinks} from '@/constants'
 import Link from 'next/link'
 import React from 'react'
+
 
 const NavItems = () => {
   return (
@@ -10,7 +11,7 @@ const NavItems = () => {
 
       return(
         <li>
-          <Link href={Link.route}>{Link.label}</Link>
+          <Link href={link.route}>{link.label}</Link>
         </li>
       )
     })}
