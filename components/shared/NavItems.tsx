@@ -1,5 +1,7 @@
+'use client'
 import { headerLinks} from '@/constants'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 import React from 'react'
 
 
@@ -14,6 +16,10 @@ const NavItems = () => {
 
       return(
         <li>
+          key={link.route}
+          classNam{`${
+            isActive && 'text-primary-500'
+          }flex-center p-medium-16 whitespace-nowrap `}
           <Link href={link.route}>{link.label}</Link>
         </li>
       )
